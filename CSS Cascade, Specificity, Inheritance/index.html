@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cascade, Specificity & Inheritance</title>
+    <style>
+      body {
+        font-family: cursive;
+        color: #333;
+      }
+      .p.p.p.p.p {
+        color: red;
+      }
+      .p {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="p">Specificity</h1>
+    <p>
+      Specificity is the way browser decides which CSS property values are the
+      most relevant to an element and gets applied.based on the selector
+    </p>
+    <p>
+      Higher will be the Specificity of selectors, more importance will be given
+      to him.
+    </p>
+    <p>
+      CSS specificity determines which style rules get applied to an element
+      when there are conflicts.
+    </p>
+
+    <p>Different Selectors have different Specificity</p>
+    <blockquote>
+      <strong>
+        Inline Style > ID Selector > Class or Attribute Selector > Element
+        Selector > Universal Selector
+      </strong>
+    </blockquote>
+    <ul>
+      <li>Universal Selector: 0</li>
+      <li>Element selectors and pseudo-elements: 1</li>
+      <li>Class selectors, attribute selectors, and pseudo-classes: 10</li>
+      <li>ID selectors: 100</li>
+      <li>Inline styles: 1000</li>
+    </ul>
+
+    <pre>
+        p {
+            color: red !important;
+          }
+          
+        p {
+            color: blue;
+          }
+    </pre>
+
+    <p>!important keyword help to increase specificity</p>
+    <p>We can increase Specificity by Repeat Multiple Selectors</p>
+    <pre>
+    .p.p.p.p.p{
+        color: red;
+      }
+
+    .p{
+        color: blue;
+      }
+    </pre>
+    <p>We can also over write css which have !important keyword this way</p>
+    <pre>
+      .p.p{
+        color: blue !important;
+      }
+
+      .p{
+        color: red !important;
+      }
+    </pre>
+
+    <h1>Cascades</h1>
+    <p>
+      If make conflict with same specificity selectors then, the last one will
+      be applied
+    </p>
+    <p>
+      means If we apply similar CSS property to single element with same
+      selector then(same specificity),then whatever the last changes we made on,
+      it will be applied
+    </p>
+
+    <p>
+      because Java script engine parses CSS from top to bottom that's why last
+      changes will be applied every time,if selectors have same specificity,
+      similar property gets overwritten by last changes
+    </p>
+
+    <h1>Inheritance</h1>
+    <p>
+      Inheritance is the mechanism by which properties are applied not only to a
+      specified element, but also to its descendants.
+    </p>
+    <p>
+      Properties are inherited from the parent element to the child element.
+    </p>
+  </body>
+</html>

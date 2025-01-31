@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Grouping and Combinator Selectors */
+      div p:first-child {
+        color: red;
+      }
+
+      div > p {
+        font-weight: bold;
+      }
+
+      ul > li + li {
+        color: rgb(47, 255, 47);
+      }
+
+      ul :first-child ~ p  {
+        color: rgb(0, 136, 255);
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <h1>We are learning HTML Selectors</h1>
+    <ul class="OC">
+      <p>Next.JS</p>
+      <p>Operating System.JS</p>
+      <p>Operating System.JS</p>
+
+      <li class="IC">HTML</li>
+      <li class="IC2">CSS</li>
+      <li>Java script</li>
+      <li>React</li>
+      <li>Node</li>
+
+      <blockquote id="indendentation">
+        This is new for me with indendentation
+      </blockquote>
+
+      <p>My name is Robin</p>
+      <div class="intro">
+        <p>Woking as software Engineer</p>
+      </div>
+    </ul>
+
+    <p name="Robin">Woking as software Engineer</p>
+    <p name="Rob">Woking as software Engineer</p>
+  </body>
+</html>
