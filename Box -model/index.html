@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOX-MODEL</title>
+    <style>
+      body {
+        font-family: cursive;
+      }
+
+      /* width */
+      .p {
+        background-color: lightblue;
+        width: 400px;
+      }
+      .c {
+        background-color: red;
+        width: 50%;
+      }
+
+      /* Heigth */
+      .p1 {
+        background-color: lightblue;
+        /* height: 200px; */
+      }
+      .c1 {
+        background-color: red;
+        width: 50%;
+        height: 80%;
+      }
+
+      /* Box-sizing:border-box; */
+      .p2 {
+        background-color: antiquewhite;
+      }
+      .c2 {
+        margin: 0px;
+        background-color: aquamarine;
+        width: 500px;
+        height: 300px;
+        padding: 10px;
+        border: 60px solid black;
+        /* box-sizing: border-box; */
+      }
+
+      /* Border radius */
+      .p3 {
+        height: 200px;
+        width: 200px;
+        border: 5px solid black;
+        outline: 5px solid gray;
+        border-radius: 100%;
+        background-color: antiquewhite;
+        overflow: hidden;
+        background: linear-gradient(
+          125deg,
+          rgb(255, 255, 255) 10%,
+          rgb(60, 216, 255)
+        );
+      }
+
+      .c3 {
+        width: 100%;
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Important points about Box BOX-MODEL</h2>
+    <ul>
+      <li>
+        In case of inline Element , it occupies
+        <strong>width an height</strong> According to the content
+      </li>
+      <li>
+        In case of Block Element , it occupies entire available space
+        <strong>width</strong> available but for the <strong>height</strong> it
+        occupies as much content require space.
+      </li>
+      <li>
+        Height and width of element are depend on each other based on the
+        content available in until we not are manipulating
+      </li>
+
+      <li>
+        when you set the <strong>height and width</strong> properties in CSS
+        using percentages, the value is always calculated relative to the size
+        of the parent element
+      </li>
+      <li>
+        Over all One thing keep it in your mind , if we try to change height or
+        width of element using Percentages then you have to specify parent
+        Dimension.
+      </li>
+    </ul>
+
+    <h2>Testing</h2>
+
+    <div class="p">
+      <p class="c">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore error at
+        repellat, possimus optio harum magni. Perspiciatis laborum nam aliquam,
+        rerum libero amet ut non incidunt fugit sapiente optio maiores!
+      </p>
+    </div>
+
+    <div class="p1">
+      <p class="c1">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate non
+        incidunt asperiores doloribus, quas adipisci expedita debitis amet
+        praesentium neque quam, quasi fuga ipsam voluptas. Explicabo iste error
+        nesciunt labore!
+      </p>
+    </div>
+    <h2>Box-Sizing:Brder-box;</h2>
+    <ul>
+      <li>
+        when we add padding & border the overral width of the box will increse ,
+        to avoid that we can use one property (box-sizing: border-box;) .
+      </li>
+      <li>Margin will not affect the inner content or box size</li>
+    </ul>
+
+    <div class="p2">
+      <p class="c2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur ex
+        minima tenetur quas asperiores facere voluptate illo nemo ipsam iure
+        numquam ratione exercitationem error minus consequatur maxime in,
+        deserunt aliquid?
+      </p>
+    </div>
+
+    <h2>Kuch intresting</h2>
+    <div class="p3">
+      <img class="c3" src="./HRMAP.png" alt="MAPHR " />
+    </div>
+    <h2>Outline</h2>
+    <ul>
+      liThe outline is drawn outside the element's border, and may overlap other
+      content. Also, the outline is NOT a part of the element's dimensions; the
+      element's total width and height is not affected by the width of the
+      outline
+    </ul>
+
+    <h2>
+      Whatever we study till is all about how to made changes like padding,
+      margin etc with block elements but what happen if we try to made changes
+      with inline elements ,will this make the same effect or what ?
+    </h2>
+    <ul>
+      <li>
+        In inline element, width & height doesn't workout. width & height
+        dependend on inner content.
+      </li>
+      <li>
+        if we add padding & border in inline element it's overral height & width
+        increses.
+      </li>
+      <li>
+        when padding & border applied to an inline element the top and bottom
+        padding's affect the surrounding elements.
+      </li>
+      <li>
+        In inline elements Whatever padding ,border, margin we applied they all
+        gets applied in horizontal but in top and bottom they grow silently.
+      </li>
+      <li>
+        To avoid these type of problem, user should use display: <strong>inline-block.</strong>
+      </li>
+      <li>
+        There are two types of inline element, one is <strong>replaced</strong> another is <strong>non
+          replaced.</strong>
+      </li>
+      <li>
+        for replaced elements every property works properly even if the element
+        is inline example -:
+        <pre>
+          iframe,
+          video,
+          embed,
+          img
+        </pre>
+      </li>
+      <li>
+        non-replaced elements are as similar as inline elements. examples -:
+        <pre>
+            span,
+            strong,
+            i,
+            b,
+            em
+          </pre
+        >
+      </li>
+    </ul>
+  </body>
+</html>
