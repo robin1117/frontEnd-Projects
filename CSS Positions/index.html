@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Position</title>
+    <style>
+      body {
+        font-family: cursive;
+        background-color: rgb(255, 255, 255);
+      }
+
+      .p1 {
+        position: relative;
+        /* width: 50%; */
+        /* top: 50px; */
+        /* left: 50px; */
+        /* right: 50px; */
+        height: 10000px;
+        background-color: lightblue;
+      }
+
+      .c1 {
+        height: 55px;
+        position: sticky;
+        top: 0px;
+        background-color: lightcoral;
+        /* inset: 5px; shorthand property top right bottom left OK */
+        /* position: unset; UNSET THE PREVIOUSLY APPLIED POSTION AND MAKE IT STATIC  */
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>
+      The way elements are arranged on the webpage is known as document flow.
+      Generally the default flow is from top to bottom or left to right on the
+      basis of block or inline element -
+    </p>
+
+    <h2>Static</h2>
+    <p>
+      This is the default Value , and it means that the element will flow in the
+      normal documents flow, according to other element around
+    </p>
+
+    <h2>Relative</h2>
+    <p>
+      Relative positioning is the position of an element relative to its normal
+      position
+    </p>
+
+    <h2>Absolute</h2>
+    <p>
+      A element with the absolute position will move according to the position
+      of it parent element in the absence of any parent element , the HTML
+      element will places relative to the page
+    </p>
+
+    <h2>Fixed</h2>
+    <p>
+      An elemnt with position fixed will remain stuck to a specific position
+      ever after the page is scroll
+    </p>
+
+    <h2>Sticky</h2>
+    <p>
+      It is a Hybrid of relative and fixed position, It becomes Sticky with in
+      the parent
+    </p>
+
+    <ul class="p1">
+      <li>Make my Trip</li>
+      <li class="c1">My name is Robin</li>
+      <li>Make my Trip 1 this is me b</li>
+    </ul>
+  </body>
+</html>
