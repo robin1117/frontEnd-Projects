@@ -28,7 +28,6 @@ img {
   margin: auto;
   width: 100%;
   border-radius: 15px;
-
 }
 
 .Data {
@@ -37,7 +36,6 @@ img {
   text-align: center;
   font-size: 10px;
   padding: 20px;
-
 }
 
 .Data h4 {
@@ -50,5 +48,13 @@ img {
   margin-top: 15px;
   font-size: 1.6em;
   margin-bottom: 0px;
-color:rgb(138, 138, 138) ;
+  color: rgb(138, 138, 138);
+}
+
+.Data .by{
+  font-size: larger;
+  text-align: left;
+  margin-left: -19px;
+  margin-top: 8px;
+  color: rgba(192, 189, 189, 0.235);
 }
