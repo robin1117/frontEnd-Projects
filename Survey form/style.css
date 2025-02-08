@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-size: 18px;
+  box-sizing: border-box;
+  background: url(https://c4.wallpaperflare.com/wallpaper/247/516/27/best-games-game-ps4-firewatch-wallpaper-preview.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  color: white;
+
+ 
+}
+
+#title {
+  text-align: center;
+  margin-top: 45px;
+  margin-bottom: 0px;
+  color: red;
+}
+#description {
+  text-align: center;
+  margin-top: 0px;
+  font-style: italic;
+  margin-bottom: 30px;
+  color: aqua;
+}
+
+#survey-form {
+  border: 2px solid black;
+  max-width: 720px;
+  margin: auto;
+  padding: 30px 40px;
+  box-sizing: border-box;
+  position: relative;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 30px 0px;
+  /* border-bottom: none; */
+  /* padding-bottom: 20px; */
+  /* border-left: none; */
+  /* border-right: none; */
+  /* border-top: none; */
+}
+
+input {
+  display: block;
+  width: 97%;
+  font-size: 15px;
+  padding-left: 13px;
+  margin-bottom: 5px;
+}
+
+input[type="radio"] {
+  width: unset;
+  display: unset;
+}
+
+fieldset:nth-child(3) label {
+  /* background-color: bisque; */
+  display: block;
+}
+
+input[type="checkbox"] {
+  width: unset;
+  display: inline;
+}
+
+fieldset:nth-child(1) input {
+  height: 39px;
+
+  border-radius: 5px;
+}
+
+
+fieldset:nth-child(2) select {
+  height: 39px;
+  border-radius: 5px;
+}
+
+fieldset:nth-child(4) label {
+  /* background-color: aqua; */
+  display: block;
+}
+textarea {
+  width: 99%;
+  /* min-width: 400px; */
+  /* max-width: 780px; */
+  resize: vertical;
+  font-size: 18px;
+}
+
+fieldset:nth-child(2) select {
+  /* background-color: aquamarine; */
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  padding-left: 13px;
+}
+
+input[type="submit"] {
+  margin: auto;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 5px;
+  width: 99%;
+}

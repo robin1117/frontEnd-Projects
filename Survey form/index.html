@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devin AI Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1 id="title">Our Company Survey Form</h1>
+    <p id="description">Tell me About Yourself</p>
+
+    <form id="survey-form" action="" method="get">
+        <fieldset>
+            <label id="name-label"> Full Name :
+                <input type="text" name="FullName" id="name" placeholder="Ex-Robin" required />
+            </label>
+            <label id="email-label">Email :
+                <input type="email" name="Email" id="email" placeholder="E-Mail" required />
+            </label>
+            <label id="email-label">Mobile Number :
+                <input type="tel" name="Phone" id="email" placeholder="Mobile Number" required/>
+            </label>
+            <label id="number-label">
+                <label for="name"> Yor age :
+                    <input type="number" name="age" id="number" min="18" max="40" placeholder="Number" required/>
+                </label>
+        </fieldset>
+
+        <fieldset>
+            How do you find us ?
+            <select name="Came_from" id="dropdown" required >
+                <option value="" selected disabled>-- Select an option --</option>
+                <option value="Whats App">Whats App</option>
+                <option value="Youtube">Youtube</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Instagram">Instagram</option>
+                <option value="Telegram">Telegram</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+
+            <label> <input name="gender" value="Male" type="radio" />Male</label>
+            <label> <input name="gender" value="Female" type="radio" />Female</label>
+            <label> <input name="gender" value="SomethingElse" type="radio" />Something Else</label>
+        </fieldset>
+        <fieldset>
+            How many of Things You Know ?
+            <label><input type="checkbox" name="Skill" value="HTML" />HTML</label>
+            <label><input type="checkbox" name="Skill" value="CSS" />CSS</label>
+            <label><input type="checkbox" name="Skill" value="JAVA" />Java Script</label>
+            <label><input type="checkbox" name="Skill" value="Java Script" />C-Language</label>
+            <label><input type="checkbox" name="Skill" value="OS" />Operating System Concepts</label>
+            <label><input type="checkbox" name="Skill" value="CN" />Computer Networks</label>
+            <label><input type="checkbox" name="Skill" value="Python" />Python</label>
+        </fieldset>
+
+        <fieldset>
+            Tell me About Your self.
+            <textarea name="AboutSelf"> lo</textarea>
+        </fieldset>
+
+        <input type="submit" />
+    </form>
+</body>
+
+</html>
