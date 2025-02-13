@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flexbox Part-1</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: cursive;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="parent">
+    <span>Hi, I am span.</span>
+    <p>
+      Hi, I am paragraph. Lorem, ipsum dolor sit amet consectetur adipisicing
+      elit. Saepe magni maxime magnam sint deserunt. Veritatis possimus eos,
+      id quos cupiditate inventore deleniti rerum quae, asperiores rem
+      suscipit voluptate recusandae a.
+    </p>
+    <a href="/">Hi, I am an anchor tag.</a>
+  </div>
+
+  <h2>Flexbox Introduction</h2>
+  <p>
+    When we make any element Display flex ,then whatever the direct chidren
+    elements present inside Flex Container they all becomes Block elements
+    ,not matter what they are initially
+  </p>
+  <p>
+    flex box provides facility to align elemets along any of the one axex
+    either Main-axies or coss axes.
+  </p>
+
+  <p>
+    <strong>Flex-Container</strong> support differet kind of properties using
+    which we can define the allignment of flex items(Direct Children
+    Elements).
+  </p>
+  <p>Propeeties for <strong>Flex-Container</strong></p>
+  <ul>
+    <li>Display</li>
+    <li>Flex-direction</li>
+    <li>Flex-wrap</li>
+    <li>Justify-content</li>
+    <li>allign-item</li>
+    <li>allign-content</li>
+    <li>gap</li>
+  </ul>
+
+  <p>
+    Further <strong>Flex-item(Children Elemets)</strong> also support
+    different kind proprties,using which we can define how the perticular
+    Flex-Item align inside flex-container
+  </p>
+  <p>Properties for <strong>Flex-item(Children Elemets)</strong></p>
+  <ul>
+    <li>Order</li>
+    <li>Flex grow</li>
+    <li>Flex shrik</li>
+    <li>Flex basis</li>
+    <li>allign-self</li>
+  </ul>
+
+  <h2>(width: max-content;) and (width: min-content;)</h2>
+  <p>
+    using these properties we can define width of block element according to
+    content available present in it.
+  </p>
+
+  <h2>Understanding How Flex-Block Shrinks Elements</h2>
+  <p>
+    All the flex-items present in the flex container , shrink at equal
+    percentage from its <strong>actual width</strong> ( This actual width by
+    default is max-content - untill we not set width explicitely) to till not
+    reaches to its minimum width which is <strong>min-content</strong>
+  </p>
+  <p>
+    If we would like to don`t want to shrink from any of the flex-item we can
+    set its <strong>flex-shrink:0;</strong> by default flex-shrink is 1. We
+    can also <strong>min-width</strong> and <strong>with</strong> property at
+    place of flex-shrink but its not recommanded
+  </p>
+
+  <p>
+    If we have empty space in our flex-container we can use property
+    <strong>flex-grow</strong>
+    over flex item to cover up the space. its default value is 0
+  </p>
+  <h2>allign-item</h2>
+  <p>
+    This property over flex-container will helps us to vertically allign the
+    flex-iems when flex direction is row , its default value is
+    <strong>strech</strong>
+  </p>
+  <h2>Justify-content</h2>
+  <p>
+    This property over Flex-Container will hels us to horizontally allign the
+    flex-items ,when flex direction is row
+  </p>
+  <h2>allign-item</h2>
+  <p>
+    this property over Flex-container is used to align flex lines form between
+    wrap element(work after flex wrap)
+  </p>
+
+  <h2>Flex-basis</h2>
+  <p>
+    With the flex-basis property we can define , from where flex-item should
+    be shrunken (Base Size)
+  </p>
+
+  <hr />
+  <h2>
+    Base-size of flex-items in flex-Container can be calculated from 3 ways -
+  </h2>
+  <li>
+    By default Base-size is calculated from its max-width of content(If we
+    brings all the content in a single line)
+  </li>
+  <li>
+    We can also set Base Size , by setting up width explicitely over flex item
+  </li>
+  <li>
+    <strong>Flex-Bases</strong> property also a good property for defining
+    Base size of Flex-item.
+  </li>
+  <h2>Difference Between Flex-Bases AND width ?</h2>
+  <p>
+    <strong>Flex-Bases</strong> is also a good property, One thing keep it in
+    your mind Flex-Bases not always work along width, but its way of working
+    is depends on in which direction we define flex-container.
+  </p>
+  <p>for Flex-direction->row --- work for width</p>
+  <p>for Flex-direction->column --- work for height</p>
+
+  <p>
+    <strong>width</strong> property always be width of element not mattter
+    where we applied it,
+  </p>
+  <p>
+    By setting up <strong>Width or height </strong>of element , generally we
+    are just making dimentions of element solidify , but
+    <strong>Flex-bases</strong> on the other hand is just the way of setting
+    kind of flexible dimenson, which can be grow accoding to content
+  </p>
+  <hr />
+  <h2>Gap property</h2>
+  <p>
+    <strong>Using gap </strong>property over flex container we can provide
+    convienent spacing between flex-items.
+  </p>
+
+  <hr />
+  <h2>Understanding Margin-auto inside flex container</h2>
+  <p>
+    <strong>Margin-left</strong> and <strong>margin-right</strong> can work on
+    <strong> flex-item</strong> as well as on
+    <strong>block elemets outside flex-container</strong>
+  </p>
+  <p>
+    <strong>Margin-top</strong> and <strong>Margin-bottom</strong> it can work
+    only inside the flex-container
+  </p>
+  <h2>Margin-block and Margin-inline</h2>
+  <p>Margin-inline--left and right</p>
+  <p>Margin-block--top and bottom</p>
+  <hr />
+  <h2>Order -Property</h2>
+  <p>
+    The order property specify the order of the flex item. Higher the order
+    later it shows up in the container ,default value value is "zero"
+  </p>
+  <h2>Align-self</h2>
+  <p>
+    The <strong>Align-self</strong> property specifies the alignment for the
+    selected item inside the flexible container
+  </p>
+  <h2>Align-item - baseline</h2>
+  <p>
+    We uses this property to align the flex-items according to the text
+    content
+  </p>
+
+  <h2>Align-content</h2>
+  <p>
+    The <strong>align-content</strong> property is used to align the flex-tems
+    when they all get wrapped in multiple lines
+  </p>
+  <hr />
+  <h2>vertical-align</h2>
+  <p>The vertical-align property in CSS is used to align inline, inline-block, or table-cell elements vertically
+    relative to their parent or surrounding elements.</p>
+  <p>Works only on inline, inline-block, or table-cell elements.</p>
+  <p>Does NOT work on block elements like
+  <div>, etc. (unless inside a table-cell).</p>
+      <p>Common values</p>
+      <ul>
+        <li>baseline (default)</li>
+        <li>top, middle, bottom</li>
+        <li>text-top, text-bottom</li>
+        <li>sub, super (for subscripts and superscripts)</li>
+      </ul>
+      <strong>For centering block elements, use Flexbox or Grid, not vertical-align. 🚀</strong>
+      <span>Text</span>
+      <h2 class="v">pika chu</h2>
+      <p>Text <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0mo1-1RPPCSd54lH3fcOeOWM1wRHxEZ3C1A&s" alt="img"> More text</p>
+<hr>
+<h2>Inline-flex </h2>
+<p>inline-flex property is the property which works in same way ,as simple flex works , the only difference here is flex-container act like inline block, means two separeate flex-container can be in put single line</p>
+</body>
+
+</html>
