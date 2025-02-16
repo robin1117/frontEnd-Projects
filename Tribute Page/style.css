@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", serif;
+  font-weight: 500;
+}
+
+#main {
+  background-color: rgb(237, 240, 234);
+  height: 100%;
+  margin: 25px 10px;
+  border-radius: 10px;
+  font-size: 20px; /*Root font*/
+  padding: 1px 12px;
+}
+
+#title,
+#sec-title,
+p {
+  text-align: center;
+}
+#title {
+  font-size: min(2em, 6vw);
+  margin-bottom: 10px;
+  padding-top: 30px;
+}
+#tribute-info {
+  font-size: min(1em, 8vw);
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+#img-caption {
+  font-size: 1em;
+  max-width: 900px;
+  margin: auto;
+  margin-top: 15px;
+}
+#image {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+}
+#img-div {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(229, 230, 224);
+  padding: 10px;
+}
+#Timeline {
+  max-width: 900px;
+  margin: auto;
+}
+#Timeline > p {
+  font-style: italic;
+}
+#Timeline > p::first-letter {
+  font-size: 50px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+#footer {
+  padding: 10px 0px;
+  max-width: 1000px;
+  margin: auto;
+}
+#footer > ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+#footer > ul > li {
+  text-decoration: none;
+  list-style: none;
+}
+#footer > ul > li > a {
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+  text-decoration: none;
+  display: inline-block;
+}
+#footer > ul > li > a:hover {
+  /* background-color: aqua; */
+  transform: translateY(5px); /* Adds a slight zoom effect */
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
