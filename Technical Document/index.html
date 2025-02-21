@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="outer">
+      <nav id="navbar">
+        <header>Operating System</header>
+        <a class="nav-link" href="#Introduction">Introduction</a>
+        <a class="nav-link" href="#Types_of_Operating_System"
+          >Types of Operating System</a
+        >
+        <a class="nav-link" href="#Kernel_(Nucleus)">Kernel (Nucleus)</a>
+        <a class="nav-link" href="#On_Startup">On Startup</a>
+        <a class="nav-link" href="#For_More_Details">For More Details</a>
+      </nav>
+      <main id="main-doc">
+        <section id="Introduction" class="main-section">
+          <header>Introduction</header>
+          <h4>Some Common Definition of OS ?</h4>
+          <ul>
+            <li>It is an interface between user and Hardware</li>
+            <li>It is resources manager</li>
+            <li>Set of utilities to simply application Development</li>
+            <li>Control program Software</li>
+            <li>Act like a Government</li>
+          </ul>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Von_Neumann_Architecture.svg"
+            alt=""
+          />
+          <h4>Functions of Control Unit</h4>
+          <ul>
+            <li>
+              It Generate Timing or Control Signals in the form of clock Pulses,
+              with theses it controls all other units .
+            </li>
+            <li>It decides the Sequence execution of Micro-Operation</li>
+          </ul>
+          <h4>Functions of ALU</h4>
+          <p>
+            Arithmetic Logic Unit or Functional Unit is Responsible for doing
+            tasks like ADDITION , SUBSCTRACTION , MUL , DIVISION etc
+          </p>
+          <p>
+            Together Control Unit and ALU we call it as a Processor / CPU /
+            Micro Processor.
+          </p>
+          <h4>Primary Memory</h4>
+          <ul>
+            <li>it is also known Main/Physical Memory</li>
+            <li>Examples -> RAM, ROM, Cache , Registers</li>
+            <li>
+              its Nature is Volatile -> As long as power supply available to
+              memory we can perform Read/Write Operation on it , As soon the
+              power supply went off content of the memory erased.
+            </li>
+            <li>Faster to access(n.s)*10^-9</li>
+            <li>Small in Size</li>
+            <li>Expensive</li>
+          </ul>
+          <h4>Secondary Memory</h4>
+          <ul>
+            <li>it is also known as Auxiliary Memory</li>
+            <li>Examples -> HDD, Pen-drives, DVD</li>
+            <li>
+              its Nature is Non Volatile -> As long as power supply available to
+              memory we can perform Read/Write Operation on it , here content of
+              the memory not gone be erased by itself Even when in no power .
+            </li>
+            <li>Slower to access(m.s)*10^-3</li>
+            <li>Larger in size</li>
+            <li>Not very Expensive</li>
+          </ul>
+          <p>
+            As per Von-Neuman Architecture , Secondary Storage Device are part
+            of Input / Output Devices.
+          </p>
+        </section>
+
+        <section id="Types_of_Operating_System" class="main-section">
+          <header>Types of Operating System</header>
+          <ul>
+            <li>
+              😒1st Generation of Computers (1930-40) : there is no concept of
+              OS
+            </li>
+            <li>
+              😒2nd Generation of Computers (1940-50) : Magnetic tapes was
+              Evolved but still there was no concept of OS
+            </li>
+            <li>
+              3rd Generation of Computers (1950-60) : Magnetic disk( HDD, FLOPPY
+              DISK ) were coming to giving rise to the two types of OS :
+            </li>
+            <ul>
+              <li>Uni-Programming-OS</li>
+              <li>Multi-Programming-OS</li>
+            </ul>
+          </ul>
+          <h4>Uni-Programming-OS</h4>
+          <p>
+            A Uni-Programming Operating System is one where only a single
+            program is loaded into memory and executed by the CPU at any given
+            time. This approach was prevalent in early computing systems. Here’s
+            a breakdown:
+          </p>
+          <h4>Multi-Programming-OS</h4>
+          <p>
+            Ability of the OS to hold (manage) multiple ready to run programs in
+            memory.
+          </p>
+        </section>
+
+        <section id="Kernel_(Nucleus)" class="main-section">
+          <header>Kernel (Nucleus)</header>
+          <p>
+            kernel is main part of OS which is Core Part of OS which is
+            responsible for managing important Hardware.
+          </p>
+          <p>
+            User can not have privilege to interact with Hardware Directly. User
+            must delegate to system call API interface to access Hardware,
+            Memory and OS routines.
+          </p>
+          <p>
+            - In Kernel mode , the executing code has complete and unrestricted
+            access to the underlying hardware. it can execute any CPU
+            instruction and reference any memory address. Kernel mode is
+            generally reserved for the lowest-level, most trusted function of
+            the OS . crashes in kernel mode are catastrophic , they will halt
+            the entire PC
+          </p>
+        </section>
+
+        <section id="On_Startup" class="main-section">
+          <header>On Startup</header>
+          <p>
+            When you start a PC, the program that loads first into memory is the
+            operating system. This is because the operating system is essential
+            for managing all other programs on the computer and is initiated by
+            a special program called a "boot loader".
+          </p>
+          <h4>Boot process:</h4>
+          <p>
+            When you turn on your computer, the BIOS (Basic Input/Output System)
+            searches for the boot loader program, which then loads the operating
+            system into memory.
+          </p>
+          <h4>Boot loader:</h4>
+          <p>
+            This small program is responsible for initializing the hardware and
+            starting the operating system.
+          </p>
+        </section>
+
+        <section id="For_More_Details" class="main-section">
+          <header>For More Details</header>
+          <code></code>
+          <code></code>
+          <code></code>
+          <code></code>
+          <code></code>
+          <h4>Comming Soon...........</h4>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
