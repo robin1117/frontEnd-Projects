@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS grid Part 1</title>
+    <style>
+      body {
+        font-family: cursive;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>What is Grid ?</h2>
+    <p>
+      Grid Layout is a 2D layout System for Creating rows and columns. It allows
+      for Creating Flexible and Responsive Layout that can adapt to different
+      screen size and devices
+    </p>
+    <h2>We shall look the grid properties in two ways</h2>
+    <ul>
+      <li>
+        Properties are to be applied on <strong>grid Container (Parent)</strong>
+      </li>
+      <li>
+        Properties are to be applied on <strong>grid Item (Chilld)</strong>
+      </li>
+    </ul>
+    <p>
+      -->When display property is to :grid or :inline-grid the element becomes a
+      <strong>grid container</strong>
+    </p>
+    <h3>Properties Associated with Grid Conainer ( Parent )</h3>
+    <ul>
+      <li>
+        <strong>Grid-template-columns : </strong>with this property we can
+        Explictely define the number of columns in the grid and width of each
+        column. Here, there is a provision to use the specification as “auto” if
+        all columns should have the same width
+      </li>
+      <li>
+        <strong>Grid-template-rows :</strong> It simply states the height of
+        each row.
+      </li>
+      <li>
+        <strong>Align-content :</strong> vertically aligns the whole grid inside
+        the specified container. It can be start, center, end, space evenly,
+        space around, space between.
+      </li>
+      <li>
+        <strong>Justify-content :</strong> it aligns the whole grid inside the
+        container. It can be start, center, space evenly, space around, space
+        between.
+      </li>
+      <li>
+        <strong>Grid-auto-flow :</strong>Using this property we can define the
+        flow of our grid-elements, and we set what would like to fill first
+        columns or rows, its default value is :row
+      </li>
+      <li>
+        <strong>Grid-auto-column</strong> Using this we can define the width of
+        the column which may be added automatically when we have more no of
+        elements
+      </li>
+      <li>
+        <strong>Grid-auto-row</strong> Using this we can define the row of the
+        column which may be added automatically
+      </li>
+
+      <li>
+        <strong>align-items:</strong> used to align grid element veritically
+        with in the grid box
+      </li>
+      <li>
+        <strong>justify-items:</strong> used to align grid element hohrizontally
+        with in the grid box
+      </li>
+      <li>
+        <strong>grid-template:</strong>short hand property to for setting
+        <u> grid-template-columns:</u>
+        <u> grid-template-row:</u>
+        with in single line
+      </li>
+      <code>grid-template:Rows/Colums;</code>
+      
+    </ul>
+<p>We can use <strong>autofill or autofit</strong> and <strong>minmax()</strong> property inside <strong>repeat()</strong> for getting more responsiveness </p>
+    <h3>Properties associated with grid items(Children)</h3>
+    <ul>
+      <li>
+        <strong>Grid-column:</strong> its a short hand property for setting
+        where the item is from start and end,you can either use line numbers, or
+        use span to define how many columns the item will span.
+      </li>
+      <code> Short Hand for ? grid-column-start: 1; grid-column-end: 2; </code>
+      <li>
+        <strong>Grid-row:</strong> its a short hand property for setting where
+        the item is from start and end,you can either use line numbers, or use
+        span to define how many row the item will span.
+      </li>
+      <code> Short Hand for ? grid-row-start: 1; grid-row-end: 2; </code>
+      <li>
+       <strong> Grid-area:</strong> For the attributes <u>grid-row-start</u>, <u>grid-column-start</u>,
+        <u>grid-row-end</u>, and <u>grid-column-end</u>, the grid-area property can be used as
+        a shorthand.
+      </li>
+    </ul>
+  </body>
+</html>
