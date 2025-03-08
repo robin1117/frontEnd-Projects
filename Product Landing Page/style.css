@@ -1,0 +1,359 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background-color: #fa6868; */
+  font-family: Lexend Deca;
+  height: 150vh;
+}
+html {
+  scroll-behavior: smooth;
+}
+#header-img {
+  width: min(10vw, 250px);
+  min-width: 115px;
+}
+#header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* border: 2px solid rgb(255, 255, 255); */
+  width: 100%;
+  backdrop-filter: blur(10px); /* Adjust the blur intensity */
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+#nav-bar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  list-style: none;
+  gap: min(2vw, 50px);
+}
+#nav-bar ul a {
+  color: #f4f4f4;
+  font-size: min(4vw, 20px);
+  text-decoration: none;
+}
+
+#form {
+  display: flex;
+  gap: 5px;
+  /* border: 2px solid rgb(255, 255, 255); */
+  /* margin-left: auto; */
+}
+form input {
+  border-radius: 5px;
+  width: 50%;
+  padding: 10px 20px;
+  margin: 0px 10px;
+  border: 1px solid rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+form [value="Sign Up"] {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+form button:hover,
+form [value="Sign Up"]:hover {
+  background-color: #45a049;
+}
+
+#hero {
+  background-image: url("https://wallpapercat.com/w/full/e/f/1/1500700-3840x2160-desktop-4k-shooter-game-wallpaper-photo.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  /* position: relative; */
+  /* margin-top: -95px; */
+  display: flex;
+  color: white;
+  gap: 10px;
+  padding-bottom: 80px;
+}
+#hero form p {
+  font-size: 1.4em;
+  max-width: 40%;
+  /* border: 2px solid rgb(255, 255, 255); */
+  margin-top: 0;
+  margin-bottom: 55px;
+}
+
+input[type="email"] {
+  cursor: text;
+  margin: 0%;
+  max-width: 20%;
+  min-width: fit-content;
+  font-size: 24px;
+}
+input[type="email"]:focus {
+  outline: none;
+}
+
+.left {
+  margin: auto;
+  align-items: self-start;
+  height: fit-content;
+  /* border: 2px solid rgb(255, 255, 255); */
+  margin-top: 30vh;
+  /* margin-left: 10%; */
+  width: min(80vw, 1900px);
+}
+
+.left h1 {
+  font-size: min(7vw, 70px);
+  margin: 0;
+}
+
+/* main section */
+
+.left #form{
+  display:inline;
+}
+
+.main {
+  background-image: url("https://www.shutterstock.com/image-photo/hand-holding-human-brain-futuristic-600nw-2473233657.jpg");
+  height: 100vh;
+  min-height: fit-content;
+  background-size: cover;
+  padding: 80px 0px;
+}
+.main h2 {
+  text-align: center;
+  color: white;
+  font-size: 2.5em;
+}
+/* .main iframe:last-child{
+display: block;
+margin: auto;
+} */
+
+.main .video {
+  padding-inline: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  /* border: 2px solid rgb(255, 84, 84); */
+}
+.boxer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  /* margin-top: 10vh; */
+  /* border: 2px solid rgb(255, 84, 84); */
+}
+.boxer .box {
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  flex-basis: 24%;
+}
+
+.pricing {
+  padding-top: 80px;
+  background: url("https://plus.unsplash.com/premium_photo-1672201106204-58e9af7a2888?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.pricing .price {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  gap: 10px;
+  height: 100%;
+  padding-bottom: 200px;
+  /* backdrop-filter: blur(20px); */
+
+}
+
+.pricing h2 {
+  text-align: center;
+  color: white;
+  font-size: 2.5em;
+}
+
+.price div {
+  padding: 20px;
+  border: 2px solid rgb(246, 188, 188);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: #ffffff00;
+  text-align: center;
+  flex-basis: 100%;
+  max-width: 325px;
+}
+.price div h4 {
+  margin-top: 0;
+}
+.price div h3 {
+  font-size: 2em;
+  margin-bottom: 1px0;
+  font-weight: 700;
+}
+.price div p {
+  font-size: 1.5em;
+  margin: 10px 10px ;
+  text-transform: lowercase;
+}
+
+.price button {
+  background-color: #ffc7c7;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  /* margin-top: auto; */
+  width: 50%;
+  align-self: center;
+  margin-bottom: 25px;
+}
+
+.price button:hover {
+  background-color: #e06bed;
+}
+
+.footer {
+  /* border: 2px solid rgb(255, 255, 255); */
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: space-evenly;
+}
+.footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  list-style: none;
+  /* margin: 10px; */
+  padding: 0;
+}
+.footer ul li a {
+  color: white;
+  list-style: none;
+  margin: 10px;
+}
+.footer h2 {
+  text-align: center;
+  font-size: 2.5em;
+}
+.footer1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.footer1 h3 {
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+
+.DeadSec {
+  text-align: center;
+}
+
+#footer {
+  background-color: hsla(263, 96%, 57%, 0.542);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  /* margin-top: 90px; */
+  /* width: 100%; */
+}
+
+/* media quries */
+@media (max-width:1000px) {
+  .main .video {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .pricing .price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    padding-bottom: 200px;
+
+  }
+  .price div {
+    padding: 20px;
+    flex-grow: 1;
+    min-width: 325px;
+  }
+  #header {
+    display: flex;
+
+    width: 100%;
+flex-direction: column;
+    top: 0;
+    z-index: 1;
+  }
+
+  .main iframe {
+    width: 90%;
+    max-width: 700px;
+  }
+  .left #form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+  #hero form p {
+    font-size: 1rem;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  input[type="email"] {
+    cursor: text;
+    margin: 0%;
+    max-width: 20%;
+    min-width: fit-content;
+    font-size: 15px;
+    margin: 0;
+  }
+  .boxer{
+    flex-direction: column;
+    gap: 0;
+  }
+  #form{
+ display: none;
+  }
+  #hero {
+    height: max-content;
+
+  }
+}
