@@ -23,15 +23,16 @@ html {
 .container {
   /* display: block; */
   display: grid;
-  grid-template-columns: repeat(4, minmax(10px, 240px));
+  grid-template-columns: repeat(4, minmax(10px, 340px));
   /* grid-template-rows: repeat(6, 10%); */
   /* background-color: rgb(255, 97, 97); */
   grid-auto-rows: 100px;
   justify-content: center;
   gap: 20px;
   padding: 16px;
-  max-width: 1000px;
+  max-width: 1119px;
   margin: auto;
+  box-sizing: content-box;
 }
 .box {
   border-radius: 10px;
@@ -104,7 +105,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 30px;
+  gap: 10px;
 }
 
 .box.box3 img {
@@ -126,7 +127,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  gap: 23px;
+  gap: 20px;
 }
 
 .box.box4 img {
@@ -134,7 +135,7 @@ html {
 }
 
 .box.box4 p {
-  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-size: clamp(1.5rem, 3vw, 1.8rem);
 }
 
 .box5 {
