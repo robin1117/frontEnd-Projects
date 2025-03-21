@@ -1,0 +1,197 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: Raleway;
+  background-color: hsl(229, 57%, 11%);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --commonPadding: 30px;
+  --popup-color: hsl(0, 0%, 100%);
+  --box-color: hsl(228, 56%, 26%);
+}
+
+.container {
+  background-image: url("./images/bg-desktop.png");
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 30px;
+  /* width: 100%; */
+  /* height: 100vh; */
+}
+.main .left {
+  border: 2px solid white;
+  padding: var(--commonPadding);
+  min-width: 350px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--box-color);
+  justify-content: center;
+  border-radius: 7px 100px 7px 7px;
+}
+.main .left .options img {
+  /* width: 100%; */
+  object-fit: contain;
+  padding: 10px;
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 12px;
+  cursor: pointer;
+}
+.main .left .options {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.main .left .logo {
+  width: 50%;
+}
+
+.main .right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 2px solid white;
+  width: 540px;
+  /* height: 150px; */
+  padding: var(--commonPadding);
+  position: relative;
+  border-radius: 7px;
+  background-color: var(--box-color);
+}
+.main p span {
+  font-weight: 700;
+}
+
+.main .right .float {
+  background-color: var(--popup-color);
+  position: absolute;
+  height: 70px;
+  width: 180px;
+  right: 30px;
+  bottom: 127px;
+  padding: 30px;
+  z-index: 0;
+  border-radius: 7px;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+.main .right .float .arrow {
+  background-color: rgba(71, 255, 25, 0);
+  position: absolute;
+  bottom: -30px;
+  right: 0px;
+  border: 50px;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: var(--popup-color);
+  border-style: solid;
+  z-index: -1;
+  border-radius: 0 10px 0 0;
+}
+
+.main .right .float > p span:last-child {
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+.main .right .float p span:first-child {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: hsl(228, 56%, 26%);
+}
+
+.main .right .total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main .right .total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main .right .loading {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 14px;
+  border-radius: 40px;
+  border: 1px solid white;
+  overflow: hidden;
+}
+
+.main .right .line {
+  width: 80%;
+  height: 12px;
+  background-image: linear-gradient(
+    65deg,
+    hsl(6, 100%, 80%),
+    hsl(335, 100%, 65%)
+  );
+  position: relative;
+  border-radius: 15px;
+}
+
+.main .right .line::after {
+  content: "";
+  position: absolute;
+  top: 1.5px;
+  right: 1px;
+  background-color: white;
+  width: 9px;
+  height: 9px;
+  border-radius: 50px;
+}
+
+@media (max-width: 1000px) {
+  .main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main .right {
+    width: 60vw;
+    min-width: 350px;
+    font-size: clamp(16px, 2vw, 20px);
+  }
+
+  .main .right .float {
+    height: 44px;
+    width: 175px;
+    right: clamp(96px,20vw,160px);
+    bottom: -31px;
+  }
+  .main .right .float .arrow {
+    display: none;
+  }
+  .container{
+    background-image: url("./images/bg-mobile.png");
+    background-size: cover;
+  }
+}
