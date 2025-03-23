@@ -1,0 +1,227 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Rubik;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --G1: linear-gradient(125deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  --G2: linear-gradient(190deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  --phone-typing: white;
+
+  --Font-chatting-text-size: 0.6rem;
+}
+
+.backbox {
+  top: 0%;
+  left: 6%;
+  transform: translateX(-59%);
+  width: 736px;
+  height: 841px;
+  background-image: var(--G1);
+  position: absolute;
+  z-index: -1;
+  border-radius: 0% 0% 50% 46% / 51%;
+}
+.container {
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 122px;
+}
+
+.phone {
+  border-radius: 30px;
+  width: 247px;
+  min-height: 504px;
+  background-color: var(--phone-typing);
+  padding: 10px;
+  box-shadow: hsl(0, 0%, 61%) 0px 0px 20px 0px;
+}
+.phone .header {
+  border-radius: 25px 25px 0px 0px;
+  height: 65px;
+  display: flex;
+  align-items: flex-end;
+  background-image: var(--G1);
+  padding: 11px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.phone .headercontent {
+  gap: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.phone .headercontent .avatarcontent {
+  margin-right: auto;
+}
+.phone .headercontent .avatarcontent p:nth-child(1) {
+  font-size: 1rem;
+}
+.phone .headercontent .avatarcontent p:nth-child(2) {
+  font-size: 0.6rem;
+  color: hsl(0, 0%, 85%);
+}
+
+.phone .headercontent img {
+  width: 13%;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.phone .headercontent i {
+  /* margin: auto; */
+  font-size: 10px;
+}
+.phone .header .speaker {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: 128px;
+  height: 15px;
+  border-radius: 0 0 12px 12px;
+  background-color: rgb(255, 255, 255);
+}
+
+.phone .main {
+  padding: 7px;
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  font-size: var(--Font-chatting-text-size);
+  height: 87%;
+  border-radius: 0 0 25px 25px;
+  background-color: hsl(270, 20%, 96%);
+}
+
+.phone .main .msg {
+  max-width: 56%;
+  width: fit-content;
+  border-radius: 7px;
+  padding: 5px;
+}
+
+.phone .main .msg.mr {
+  background-color: white;
+  margin-left: auto;
+  color: hsl(271, 15%, 43%);
+}
+.phone .main .msg.ml {
+  color: hsl(276, 55%, 52%);
+  background-color: hsl(271, 88%, 94%);
+}
+
+.phone .main .msg.reward {
+  color: white;
+  background-image: var(--G2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 160px;
+  width: 157px;
+  height: 30px;
+  border-radius: 9px 9px 9px 0;
+  padding: 10px;
+  gap: 5px;
+}
+
+.phone .main .msg.reward p {
+  margin-right: auto;
+  font-size: var(--Font-chatting-text-size);
+}
+
+.phone .main .msg.reward i {
+  font-size: 8px;
+}
+.phone .main .msg.reward span {
+  font-weight: 500;
+  font-size: 0.7rem;
+}
+
+.phone .main .msg.content-img {
+  display: flex;
+  gap: 7px;
+  justify-content: center;
+  background-color: unset;
+  max-width: 100%;
+}
+
+.phone .main .msg.content-img img {
+  width: 34px;
+  box-sizing: unset;
+  border-radius: 7px;
+  /* background-color: aliceblue; */
+}
+
+.phone .main .footer {
+  background-color: var(--phone-typing);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px;
+  border-radius: 50px;
+  height: 30px;
+  margin-top: auto;
+}
+.phone .main .footer i {
+  background-color: hsl(271, 36%, 24%);
+  border-radius: 50px;
+  height: 25px;
+  width: 25px;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.phone .main .footer p {
+  margin-left: 16px;
+  color: hsl(206, 6%, 79%);
+}
+
+.right {
+  max-width: 442px;
+}
+.right h1 {
+  font-size: 2.5rem;
+  margin-bottom: 35px;
+}
+.right p {
+  color: hsl(270, 7%, 64%);
+}
+
+@media (max-width: 1000px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 35px;
+
+  }
+
+  .backbox {
+    top: -30%;
+    left: 10%;
+    transform: translateX(-70%);
+
+  }
+  .right{
+    text-align: center;
+  }
+
+}
