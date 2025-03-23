@@ -21,7 +21,7 @@ body {
 
 .backbox {
   top: 0%;
-  left: 6%;
+  left: 15%;
   transform: translateX(-59%);
   width: 736px;
   height: 841px;
@@ -47,6 +47,7 @@ body {
   padding: 10px;
   box-shadow: hsl(0, 0%, 61%) 0px 0px 20px 0px;
 }
+
 .phone .header {
   border-radius: 25px 25px 0px 0px;
   height: 65px;
@@ -102,7 +103,7 @@ body {
   border: 2px solid white;
   display: flex;
   flex-direction: column;
-  gap: 9px;
+  gap: 12px;
   font-size: var(--Font-chatting-text-size);
   height: 87%;
   border-radius: 0 0 25px 25px;
@@ -211,17 +212,14 @@ body {
     flex-direction: column;
     height: 100%;
     gap: 35px;
-
   }
 
   .backbox {
     top: -30%;
     left: 10%;
     transform: translateX(-70%);
-
   }
-  .right{
+  .right {
     text-align: center;
   }
-
 }
