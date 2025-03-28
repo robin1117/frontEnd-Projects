@@ -1,0 +1,353 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Raleway;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: auto;
+  padding: 50px;
+  /* background-color: aqua; */
+}
+
+.header img {
+  width: clamp(7rem, 30vw, 10rem);
+}
+.header ul {
+  display: flex;
+  gap: 15px;
+}
+
+.header ul li {
+  list-style: none;
+}
+.header ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
+
+.hero {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: antiquewhite; */
+  height: 600px;
+  padding: 0 50px;
+  align-items: center;
+}
+.hero .left {
+  width: 500px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero .left p {
+  font-weight: 400;
+}
+
+.hero .left .access {
+  display: flex;
+  gap: 5px;
+}
+.hero .left .access input:nth-child(1) {
+  max-width: 312px;
+  width: 100%;
+  height: 40px;
+  padding: 9px;
+  border-radius: 3px;
+  border: 1px solid gray;
+}
+.hero .left .access input:nth-child(2) {
+  border-radius: 3px;
+  width: 200px;
+  height: 40px;
+  color: white;
+  background-color: hsl(224, 93%, 58%);
+  border: none;
+  font-weight: 600;
+}
+.hero .left .access input:nth-child(2):hover {
+  background-color: hsl(224, 94%, 68%);
+}
+
+.hero .right img {
+  width: 100%;
+  max-width: 500px;
+  min-width: 300px;
+  display: block;
+  margin: auto;
+}
+
+.main-back {
+  background-image: url(./images/bg-curve-desktop.svg);
+  /* height: 650px; */
+  display: flex;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: clamp(7000px, 500%, 8500px);
+  /* background-size: cover; */
+  background-position: center 0px;
+}
+.main {
+  display: flex;
+  max-width: 1400px;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 50px;
+}
+
+.main .left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 560px;
+}
+.main .left a {
+  color: hsl(170, 45%, 43%);
+  text-decoration: none;
+  border-bottom: 2px solid hsl(170, 45%, 43%);
+  width: fit-content;
+  padding-bottom: 5px;
+}
+
+.main .left .card {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 2px solid red; */
+  max-width: 356px;
+  min-height: 217px;
+  gap: 15px;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 2px 4px 9px 0px rgb(218, 218, 218);
+}
+
+.main .left .card .profile {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.main .left .card .profile img {
+  width: 12%;
+  border-radius: 50px;
+}
+.main .left .card .profile .text p:nth-child(1) {
+  font-weight: 700;
+}
+
+.main .left .card > img {
+  width: 4%;
+}
+
+.main .right img {
+  width: 100%;
+  max-width: 500px;
+  min-width: 300px;
+  display: block;
+  margin: auto;
+}
+
+.footer-back {
+  background-color: hsl(238, 22%, 44%);
+}
+
+.footer {
+  margin: auto;
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: hsl(238, 22%, 44%);
+  height: 300px;
+  color: white;
+}
+.footer .left {
+  max-width: 500px;
+}
+.footer .left h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.footer .right {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 30%;
+  min-width: 200px;
+}
+.footer .right input:nth-child(1) {
+  max-width: 500px;
+  height: 40px;
+  padding: 9px;
+}
+.footer .right input:nth-child(2) {
+  width: 200px;
+  height: 40px;
+}
+.footer2-back {
+  background-color: hsl(243, 87%, 12%);
+}
+.footer2 {
+  margin: auto;
+  max-width: 1400px;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  background-color: hsl(243, 87%, 12%);
+  height: 387px;
+  align-items: center;
+  color: white;
+}
+.footer2 .lm img {
+  filter: invert(20%);
+  vertical-align: bottom;
+}
+
+.footer2 .lm {
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: left;
+}
+.footer2 .lm a {
+  color: white;
+}
+
+.footer2 .lm p {
+  white-space: nowrap;
+}
+
+.footer2 .rm {
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+}
+.footer2 .rm .socialmedia {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+}
+.footer2 .rm .socialmedia i {
+  padding: 8px 9px;
+  border: 1px solid white;
+  height: 35px;
+  width: 35px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.footer2 li {
+  list-style: none;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+@media (max-width: 761px) {
+  body {
+    /* background-color: aqua; */
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px;
+    /* background-color: aqua; */
+  }
+  .hero {
+    max-width: 1400px;
+    flex-direction: column-reverse;
+  }
+  .hero .left {
+    width: unset;
+    text-align: center;
+  }
+  .main-back {
+    margin-top: 100px;
+    background-image: url(./images/bg-curve-mobile.svg);
+    height: fit-content;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: clamp(7000px, 500%, 8500px); */
+    /* background-size: cover; */
+    /* background-position: center 0px; */
+  }
+  .main {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .main .left a {
+    margin: auto;
+  }
+
+  .main .left .card {
+    margin: auto;
+    text-align: left;
+  }
+
+  .footer {
+    margin: auto;
+    height: fit-content;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+  .footer .right {
+    width: 100%;
+  }
+  .footer .right input:nth-child(1) {
+    max-width: unset;
+  }
+  .footer .right input:nth-child(2) {
+    width: unset;
+  }
+
+  .footer2 {
+    flex-direction: column;
+    height: unset;
+    align-items: flex-start;
+  }
+
+  .footer2 .rm {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .hero .left .access {
+    flex-direction: column;
+  }
+  .hero .left .access input:nth-child(1) {
+    max-width: unset;
+    width: unset;
+  }
+  .hero .left .access input:nth-child(2) {
+    width: unset;
+  }
+}
