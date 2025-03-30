@@ -279,9 +279,6 @@ body {
 }
 
 @media (max-width: 700px) {
-  body {
-    /* background-color: #ff4081; */
-  }
   .header {
     padding: 30px;
   }
@@ -303,9 +300,12 @@ body {
 
   .hero .counting {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     /* background-color: #ff99cc; */
     margin-bottom: 0;
+    align-items: center;
+    gap: 100px;
   }
 
   .footer1 {
@@ -324,10 +324,25 @@ body {
     margin-top: 207px;
     padding: 30px;
   }
-  .GT{
+  .GT {
     flex-direction: column-reverse;
   }
-  .YU{
+  .YU {
     flex-direction: column-reverse;
   }
+  .footer1 .right form {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: unset;
+  }
+
+  .footer1 .right form input[type="email"] {
+    max-width: unset;
+  }
+
+  .footer1 .right form input[type="button"] {
+  max-width: 200px;
 }
+
+}
+
