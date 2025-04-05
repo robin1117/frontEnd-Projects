@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  padding: 0;
+  padding: 20px;
+  font-family: "Red Hat Display";
+  background-color: hsl(225, 100%, 94%);
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+}
+
+.back {
+  background-image: url(./images/pattern-background-desktop.svg);
+  /* background-color: antiquewhite; */
+  width: 100%;
+  height: 100vh;
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.container {
+  width: 100%;
+  max-width: 450px;
+  /* min-height: 750px; */
+  background-color: white;
+  border-radius: 18px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.container > img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 26px;
+  padding: 50px;
+}
+.data h2 {
+  font-size: 1.7rem;
+  font-weight: 900;
+}
+
+.data > p {
+  font-size: 1rem;
+}
+.data .plan {
+  display: flex;
+  justify-content: space-between1;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  height: 100px;
+  border-radius: 7px;
+  padding-inline: 13px;
+  gap: clamp(0.2rem, 2vw, 1rem);
+}
+
+.data .plan .text {
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.data .plan a {
+  font-weight: 700;
+}
+.data .plan .text p:nth-child(1) {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: 700;
+}
+.data .plan .text p:nth-child(2) {
+  font-size: clamp(0.8rem, 1vw, 1rem);
+}
+
+.data button {
+  background-color: #4a3aff; /* Deep blue */
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+.data button:hover {
+  background-color: #372cff;
+}
+
+.data > a {
+  text-decoration: none;
+  font-weight: 700;
+  color: hsl(224, 23%, 55%);
+}
+
+@media (max-width: 400px) {
+  .back {
+    background-image: url(./images/pattern-background-mobile.svg);
+  }
+
+  .data {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 26px;
+    padding: 30px;
+  }
+
+  .data .plan .text {
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .data .plan a {
+    font-weight: 200;
+  }
+  .data .plan .text p:nth-child(1) {
+    font-size: 0.9rem;
+
+  }
+  .data .plan .text p:nth-child(2) {
+    font-size: 0.7rem;
+  }
+  .data .plan a {
+    font-weight: 700;
+    font-size: 0.7rem;
+  }
+}
